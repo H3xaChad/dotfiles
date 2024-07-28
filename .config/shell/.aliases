@@ -1,0 +1,69 @@
+## Useful aliases
+# Replace ls with exa
+alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
+alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
+alias ll='exa -l --color=always --group-directories-first --icons'  # long format
+alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
+alias l.="exa -a | egrep '^\.'"                                     # show only dotfiles
+
+# Common use
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias ff='fastfetch'
+alias tarnow='tar -acf '
+alias untar='tar -zxvf '
+alias wget='wget -c '
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias hw='hwinfo --short'                                                           # Hardware Info
+alias big="expac -H M '%m\t%n' | sort -h | nl"                                      # Sort installed packages according to size in MB
+alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"       # Recent installed packages
+alias ac='$EDITOR ~/.config/shell/.aliases'
+alias ec='$EDITOR ~/.config/shell/.env_vars'
+alias fixaudio='systemctl --user stop pipewire.socket && systemctl --user stop pipewire'
+
+# VPN - Very specific
+alias vpnhomenetwork='wg-quick up homenetwork'
+
+# Common use - Arch specific
+alias yay='yay --noconfirm'
+alias rmpaclock="sudo rm /var/lib/pacman/db.lck"
+alias rmpkg="sudo pacman -Rdd"
+alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'          # List amount of -git packages
+alias cleanup='sudo pacman -Rns (pacman -Qtdq)'             # Clear orphaned packages
+
+# Java shortcuts - Arch specific
+alias java-g='archlinux-java get'
+alias java-s='archlinux-java status'
+alias java-set8='sudo archlinux-java set java-8-openjdk'
+alias java-set11='sudo archlinux-java set java-11-openjdk'
+alias java-set16='sudo archlinux-java set java-16-openjdk'
+
+# Common use - KDE specific
+alias plasmarestart='killall plasmashell && kstart5 plasmashell'
+alias fixkwin='setsid kwin_x11 --replace &'
+alias mailspring='mailspring --password-store="kwallet5"'
+
+# Switch used GPU - Only for laptops with hybrid GPU (internal+nvidia) 
+alias integratedgpu='optimus-manager --switch integrated --no-confirm'
+alias nvidiagpu='optimus-manager --switch nvidia --no-confirm'
+alias hybridgpu='optimus-manager --switch hybrid --no-confirm'
+alias getgpu='optimus-manager --print-mode'
+
+# Hacking with airmon :)
+alias wlan-monitor='sudo airmon-ng start wlan0 && sudo airmon-ng check kill'
+alias wlan-managed='sudo airmon-ng stop wlan0mon && sudo systemctl restart NetworkManager'
+alias airodump='sudo airodump-ng wlan0mon'
+alias clearshakes='sudo rm ~/Documents/Aircrack/Handshakes/*'
+alias deauth='sudo aireplay-ng wlan0mon --deauth'
+
+# Get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+
