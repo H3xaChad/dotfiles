@@ -1,6 +1,13 @@
-# Exclude the oh-my-zsh config, since this is a git repository itself, containing no important configuration
-.config/oh-my-zsh
 
-# Exclude zsh related files that contain private information
+
+## Exclude zsh related files that contain private information
+
+# Bash
+**/.bash_history
+
+# Zsh
 **/.zsh_history
 **/.zcompdump*
+
+# Exclude the oh-my-zsh config, since this is a git repository itself, containing no important configuration
+.config/oh-my-zsh
