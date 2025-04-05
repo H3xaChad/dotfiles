@@ -1,9 +1,8 @@
-rocm-cmake 5.6.1 yes
-rocm-core 5.6.1 yes
-rocm-device-libs 5.6.1 yes
-rocm-hip-runtime 5.6.1 yes
-rocm-language-runtime 5.6.1 yes
-rocm-llvm 5.6.1 yes
-rocm-opencl-runtime 5.6.1 yes
-rocminfo 5.6.1 yes
-
+rocm-cmake 6.2.4 yes
+rocm-core 6.2.4 yes
+rocm-device-libs 6.2.4 yes
+rocm-hip-runtime 6.2.4 yes
+rocm-language-runtime 6.2.4 yes
+rocm-llvm 6.2.4 yes
+rocm-opencl-runtime 6.2.4 yes
+rocminfo 6.2.4 yes

@@ -1,1 +1,188 @@
- 
+ # --- OS Crap ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+*.tmp
+
+# --- Logs / Dumps ---
+*.log
+*.log.*
+*.out
+*.err
+*.bak
+*.tmp
+*.swp
+*.swo
+*.pid
+*.seed
+*.pid.lock
+*.stackdump
+*.core
+
+# --- Shell Histories / Credentials ---
+.zsh_history
+.bash_history
+.fish_history
+.history
+.psql_history
+.my.cnf
+*.pem
+*.key
+*.crt
+*.env
+.env.*
+.secret
+secrets.yml
+*.kdbx
+
+# --- Node / JS ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.tox
+*.coverage
+.cache/
+.pytest_cache/
+venv/
+ENV/
+env/
+
+# --- Java ---
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.project
+*.classpath
+target/
+out/
+
+# --- C / C++ / Rust ---
+*.o
+*.obj
+*.dll
+*.exe
+*.out
+*.so
+*.a
+*.dSYM/
+*.rlib
+Cargo.lock
+target/
+
+# --- IDEs / Editors ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.komodoproject
+*.tmproj
+*.editorconfig
+
+# --- OS/DE Specific ---
+.trash/
+.Trash-*/
+lost+found/
+*~
+*.sw?
+.cache/
+.local/
+.config/Code/
+.config/JetBrains/
+
+# --- Containers / VM ---
+*.vdi
+*.vmdk
+*.qcow2
+*.img
+*.iso
+*.box
+.vagrant/
+docker-compose.override.yml
+
+# --- Misc Dev Artifacts ---
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.log
+*.pid
+*.dump
+*.tgz
+*.gz
+*.zip
+*.tar
+*.7z
+
+# --- Git Conflicts / Patch Files ---
+*.orig
+*.rej
+*.patch
+
+# --- Backups ---
+*~
+*.bak
+*.tmp
+*.old
+*.save
+*.swp
+*.swo
+
+# --- Binary blobs ---
+*.bin
+*.hex
+*.elf
+
+# --- Fonts / Media ---
+# *.mp3
+# *.mp4
+# *.mov
+# *.avi
+# *.mkv
+# *.flac
+# *.wav
+# *.ogg
+# *.ttf
+# *.otf
+# *.woff
+# *.woff2
+
+# --- Images (optional) ---
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.tiff
+# *.ico
+# *.svg
+# *.webp
+
+# --- Archives ---
+# *.tar.gz
+# *.tar.bz2
+# *.tar.xz
+# *.zip
+# *.rar
+# *.7z
+# *.xz
+# *.lzma
