@@ -27,17 +27,17 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"   
 alias ac='$EDITOR ~/.config/shell/.aliases'
 alias ec='$EDITOR ~/.config/shell/.env_vars'
 alias fixaudio='systemctl --user stop pipewire.socket && systemctl --user stop pipewire'
-alias jctl="journalctl -p 3 -xb"
+alias jctl='journalctl -p 3 -xb'
+alias docker='sudo docker'
 alias vencord-install='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
-
-# Sabnzbd - Custom launch because the aur package is not working...
-alias sabnzbd='python3 /media/ssd/Programs/SABnzbd/SABnzbd.py'
 
 # VPN - Very specific
 alias vpnhomenetwork='wg-quick up homenetwork'
 
 # Common use - Arch specific
+alias pacman='sudo pacman'
 alias yay='yay --noconfirm'
+alias paru='paru --noconfirm'
 alias rmpaclock="sudo rm /var/lib/pacman/db.lck"
 alias rmpkg="sudo pacman -Rdd"
 alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'          # List amount of -git packages
@@ -67,3 +67,5 @@ alias wlan-managed='sudo airmon-ng stop wlan0mon && sudo systemctl restart Netwo
 alias airodump='sudo airodump-ng wlan0mon'
 alias clearshakes='sudo rm ~/Documents/Aircrack/Handshakes/*'
 alias deauth='sudo aireplay-ng wlan0mon --deauth'
+
+alias cshack='(cd ~/Dev/Rust/deadlocked && cargo run --release) &'

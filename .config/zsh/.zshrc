@@ -10,6 +10,7 @@ export ZSH="$HOME/.config/oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="zsh-simple-headless-theme/simple-headless"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -62,3 +63,11 @@ ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=blue'
 # figlet "Lets go zsh" | lolcat
 
 export PATH=$PATH:/home/david/.spicetify
+
+# pnpm
+export PNPM_HOME="/home/david/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
