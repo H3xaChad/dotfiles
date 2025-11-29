@@ -29,12 +29,12 @@ zstyle ':omz:update' frequency 7
 
 plugins=(
   git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
   kubectl
   history
   emoji
   encode64
+  zsh-syntax-highlighting
+  zsh-autosuggestions
 )
 
 # Source locales (language configuration)
