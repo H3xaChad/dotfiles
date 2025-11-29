@@ -1,6 +1,9 @@
 ## My dotfiles :)
 
+**Note:** These dotfiles use custom locations to keep the home directory clean. oh-my-zsh, oh-my-fish, `.zshrc`, and other configs are moved to `~/.config/` instead of cluttering the home directory.
+
 ### Prerequisites
+- stow
 - neovim
 - zsh
 - fish
@@ -19,7 +22,7 @@
    git clone https://github.com/H3xaChad/dotfiles.git
    ```
 
-2. Navigate to the dotfiles directory and use stow:
+2. Navigate to the dotfiles directory and use stow to create symlinks for .config folders:
    ```sh
    cd dotfiles && stow .
    ```
